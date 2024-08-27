@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsCliente.cs" />
+    <Compile Include="clsCola.cs" />
+    <Compile Include="clsNodo.cs" />
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
