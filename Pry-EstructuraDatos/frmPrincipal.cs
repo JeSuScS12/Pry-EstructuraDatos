@@ -22,5 +22,11 @@ namespace Pry_EstructuraDatos
             frmCola ventanaC = new frmCola();
             ventanaC.ShowDialog();
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila ventanaP = new frmPila();
+            ventanaP.ShowDialog();
+        }
     }
 }
