@@ -197,6 +197,7 @@
             this.btnEliminarP.TabIndex = 0;
             this.btnEliminarP.Text = "Eliminar";
             this.btnEliminarP.UseVisualStyleBackColor = true;
+            this.btnEliminarP.Click += new System.EventHandler(this.btnEliminarP_Click);
             // 
             // groupBox1
             // 
@@ -278,6 +279,7 @@
             this.btnAgregarP.TabIndex = 0;
             this.btnAgregarP.Text = "Agregar";
             this.btnAgregarP.UseVisualStyleBackColor = true;
+            this.btnAgregarP.Click += new System.EventHandler(this.btnAgregarP_Click);
             // 
             // pictureBox1
             // 

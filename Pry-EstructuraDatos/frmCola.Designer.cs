@@ -37,6 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnAgregarC = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblTraCola = new System.Windows.Forms.Label();
+            this.lblNomCola = new System.Windows.Forms.Label();
+            this.lblCodCola = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,9 +51,6 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lstCola = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblCodCola = new System.Windows.Forms.Label();
-            this.lblNomCola = new System.Windows.Forms.Label();
-            this.lblTraCola = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -138,6 +138,7 @@
             this.btnAgregarC.TabIndex = 0;
             this.btnAgregarC.Text = "Agregar";
             this.btnAgregarC.UseVisualStyleBackColor = true;
+            this.btnAgregarC.Click += new System.EventHandler(this.btnAgregarC_Click);
             // 
             // groupBox2
             // 
@@ -155,6 +156,39 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Elemento Eliminado";
+            // 
+            // lblTraCola
+            // 
+            this.lblTraCola.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblTraCola.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTraCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTraCola.Location = new System.Drawing.Point(77, 116);
+            this.lblTraCola.Name = "lblTraCola";
+            this.lblTraCola.Size = new System.Drawing.Size(100, 22);
+            this.lblTraCola.TabIndex = 9;
+            this.lblTraCola.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNomCola
+            // 
+            this.lblNomCola.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblNomCola.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblNomCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomCola.Location = new System.Drawing.Point(77, 79);
+            this.lblNomCola.Name = "lblNomCola";
+            this.lblNomCola.Size = new System.Drawing.Size(100, 22);
+            this.lblNomCola.TabIndex = 8;
+            this.lblNomCola.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCodCola
+            // 
+            this.lblCodCola.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblCodCola.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCodCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodCola.Location = new System.Drawing.Point(77, 43);
+            this.lblCodCola.Name = "lblCodCola";
+            this.lblCodCola.Size = new System.Drawing.Size(100, 22);
+            this.lblCodCola.TabIndex = 7;
+            this.lblCodCola.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -195,6 +229,7 @@
             this.btnEliminarC.TabIndex = 0;
             this.btnEliminarC.Text = "Eliminar";
             this.btnEliminarC.UseVisualStyleBackColor = true;
+            this.btnEliminarC.Click += new System.EventHandler(this.btnEliminarC_Click);
             // 
             // groupBox3
             // 
@@ -256,39 +291,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // lblCodCola
-            // 
-            this.lblCodCola.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lblCodCola.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCodCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodCola.Location = new System.Drawing.Point(77, 43);
-            this.lblCodCola.Name = "lblCodCola";
-            this.lblCodCola.Size = new System.Drawing.Size(100, 22);
-            this.lblCodCola.TabIndex = 7;
-            this.lblCodCola.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblNomCola
-            // 
-            this.lblNomCola.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lblNomCola.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNomCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomCola.Location = new System.Drawing.Point(77, 79);
-            this.lblNomCola.Name = "lblNomCola";
-            this.lblNomCola.Size = new System.Drawing.Size(100, 22);
-            this.lblNomCola.TabIndex = 8;
-            this.lblNomCola.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTraCola
-            // 
-            this.lblTraCola.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lblTraCola.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTraCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTraCola.Location = new System.Drawing.Point(77, 116);
-            this.lblTraCola.Name = "lblTraCola";
-            this.lblTraCola.Size = new System.Drawing.Size(100, 22);
-            this.lblTraCola.TabIndex = 9;
-            this.lblTraCola.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmCola
             // 

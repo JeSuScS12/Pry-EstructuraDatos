@@ -46,9 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsCliente.cs" />
     <Compile Include="clsCola.cs" />
     <Compile Include="clsNodo.cs" />
+    <Compile Include="clsPila.cs" />
+    <Compile Include="frmListaSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaSimple.Designer.cs">
+      <DependentUpon>frmListaSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLsitaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLsitaDoble.Designer.cs">
+      <DependentUpon>frmLsitaDoble.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPila.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCola.resx">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaSimple.resx">
+      <DependentUpon>frmListaSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLsitaDoble.resx">
+      <DependentUpon>frmLsitaDoble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPila.resx">
       <DependentUpon>frmPila.cs</DependentUpon>
@@ -106,6 +124,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pila.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listaS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListaDoble.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,16 +17,32 @@ namespace Pry_EstructuraDatos
             InitializeComponent();
         }
 
+
+        //Llamar al frmCola  ---> Cola
         private void colaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCola ventanaC = new frmCola();
             ventanaC.ShowDialog();
         }
 
+
+        //Llamar al frmPila ---> Pila
         private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmPila ventanaP = new frmPila();
             ventanaP.ShowDialog();
+        }
+
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaSimple ventanaListaS = new frmListaSimple();
+            ventanaListaS.ShowDialog();
+        }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLsitaDoble ventanaListaD = new frmLsitaDoble();
+            ventanaListaD.ShowDialog();
         }
     }
 }
