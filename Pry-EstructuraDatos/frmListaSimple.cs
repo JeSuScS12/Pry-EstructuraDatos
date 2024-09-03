@@ -16,5 +16,27 @@ namespace Pry_EstructuraDatos
         {
             InitializeComponent();
         }
+
+        clsListaSimple nuevo = new clsListaSimple();
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            clsNodo obj = new clsNodo();
+            obj.Codigo = Convert.ToInt32(txtCod.Text);
+            obj.Nombre = txtNom.Text;
+            obj.Tramite = txtTra.Text;
+
+            nuevo.Agregar(obj);
+            nuevo.Recorrer(dgvTablaLs);
+
+            txtCod.Text = "";
+            txtNom.Text = "";
+            txtTra.Text = "";
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
