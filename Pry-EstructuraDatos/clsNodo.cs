@@ -14,6 +14,7 @@ namespace Pry_EstructuraDatos
         private string nom;
         private string tra;
         private clsNodo sig;
+        private clsNodo ant;
 
         //Declaracion de las Propiedades
         public int Codigo
@@ -37,6 +38,25 @@ namespace Pry_EstructuraDatos
             set { sig = value; }
         }
 
+        public clsNodo Anterior
+        {
+            get { return ant; }
+            set { ant = value; }
+        }
+
+        //----------------------------------------------------------------------
+
+        public clsNodo Izquierda
+        {
+            get { return ant; }
+            set { ant = value; }
+        }
+
+        public clsNodo Derecha
+        {
+            get { return ant; }
+            set { ant = value; }
+        }
 
     }
 }

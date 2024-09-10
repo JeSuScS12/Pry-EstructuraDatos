@@ -49,5 +49,11 @@ namespace Pry_EstructuraDatos
         {
             this.Close();
         }
+
+        private void arbolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbolBinario ventanaArbol = new frmArbolBinario();
+            ventanaArbol.ShowDialog();
+        }
     }
 }
